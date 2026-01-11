@@ -1,0 +1,19 @@
+\<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Dashboard</h2>
+    <form method="POST">
+        <input type="text" name="task" placeholder="Task name" required>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <button type="submit">Add Task</button>
+    </form>
+    <a href="/logout">Logout</a>
+</div>
+</body>
+</html>
